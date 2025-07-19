@@ -853,6 +853,41 @@ body {
     line-height: 1.6;
 }
 
+.features-note {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, 
+        #f8f9fa 0%, 
+        #f8f9fa 40%, 
+        #7c838a 100%);
+    border-radius: 15px;
+    border-left: 4px solid var(--primary-color);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Dark theme for features note */
+[data-theme="dark"] .features-note {
+    background: linear-gradient(135deg, 
+        #2a2a2a 0%, 
+        #2a2a2a 40%, 
+        #495057 100%);
+}
+
+.features-note p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+    font-style: italic;
+}
+
+.features-note em {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
 /* Benefits Section */
 .benefits {
     padding: 100px 0;
