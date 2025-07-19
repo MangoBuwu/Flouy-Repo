@@ -140,7 +140,7 @@ const translations = {
         'video.description': 'Mira cómo FLOY transforma la gestión de WhatsApp en tu negocio. Desde la configuración inicial hasta el análisis avanzado de datos.',
         
         // Sponsors Section
-        'sponsors.title': 'Empresas que confían en FLOY',
+        'sponsors.title': 'Quienes inspiraron el desarrollo de esta idea',
         
         // Features Section
         'features.title': 'Características Principales',
@@ -175,9 +175,9 @@ const translations = {
         // Contact Section
         'contact.title': '¿Listo para Revolucionar tu WhatsApp?',
         'contact.description': 'Únete a miles de empresas que ya confían en FLOY para automatizar y optimizar su comunicación por WhatsApp.',
-        'contact.feature1': 'Configuración en 5 minutos',
-        'contact.feature2': 'Prueba gratuita de 14 días',
-        'contact.feature3': 'Soporte técnico incluido',
+        'contact.feature1': 'Atención personalizada y con datos de tu negocio en tiempo real',
+        'contact.feature2': 'Control de tu negocio desde la palma de tu mano',
+        'contact.feature3': 'Respuestas instantáneas',
         'contact.form.name': 'Nombre completo',
         'contact.form.email': 'Correo electrónico',
         'contact.form.message': 'Cuéntanos sobre tu proyecto',
@@ -213,7 +213,7 @@ const translations = {
         'nav.features': 'Features',
         'nav.benefits': 'Benefits',
         'nav.pricing': 'Pricing',
-        'nav.demo': 'Demostración',
+        'nav.demo': 'Demo',
         'nav.contact': 'Contact',
         
         // Hero Section
@@ -247,7 +247,7 @@ const translations = {
         'video.description': 'See how FLOY transforms WhatsApp management in your business. From initial setup to advanced data analysis.',
         
         // Sponsors Section
-        'sponsors.title': 'Companies that trust FLOY',
+        'sponsors.title': 'Who inspired the development of this idea',
         
         // Features Section
         'features.title': 'Main Features',
@@ -287,7 +287,7 @@ const translations = {
         'contact.feature3': 'Personalized attention with real-time business data',
         'contact.form.name': 'Full name',
         'contact.form.email': 'Email',
-        'contact.form.message': 'Tell us about your project',
+        'contact.form.message': 'Tell us about your project and share your ideas to improve the platform',
         'contact.form.submit': 'Send Message',
         
         // Footer
@@ -354,7 +354,7 @@ const translations = {
         'video.description': 'Veja como FLOY transforma o gerenciamento do WhatsApp em seu negócio. Da configuração inicial à análise avançada de dados.',
         
         // Sponsors Section
-        'sponsors.title': 'Empresas que confiam no FLOY',
+        'sponsors.title': 'Quem inspirou o desenvolvimento desta ideia',
         
         // Features Section
         'features.title': 'Recursos Principais',
@@ -394,7 +394,7 @@ const translations = {
         'contact.feature3': 'Atenção personalizada com dados do negócio em tempo real',
         'contact.form.name': 'Nome completo',
         'contact.form.email': 'Email',
-        'contact.form.message': 'Conte-nos sobre seu projeto',
+        'contact.form.message': 'Conte-nos sobre seu projeto e compartilhe suas ideias para melhorar a plataforma',
         'contact.form.submit': 'Enviar Mensagem',
         
         // Footer

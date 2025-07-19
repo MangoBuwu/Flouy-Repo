@@ -8,9 +8,10 @@ sales_2024 = [120, 130, 150, 145, 160, 180, 175, 190, 185, 200, 210, 230]
 # 2025: Ligero aumento, con un pico significativo en Febrero
 sales_2025 = [125, 210, 158, 155, 170, 195] # Febrero (210) es mucho mayor que en 2024 (130)
 
-# Meses en ambos idiomas
+# Meses en los tres idiomas
 months_es = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic']
 months_en = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+months_pt = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']
 
 # Creamos un DataFrame unificado para que Seaborn trabaje mejor
 data = {
@@ -25,7 +26,7 @@ df_sales = pd.DataFrame(data)
 def create_sales_chart(df, lang='es'):
     """
     Crea un gráfico de líneas de ventas con personalización avanzada.
-    lang: 'es' para español, 'en' para inglés.
+    lang: 'es' para español, 'en' para inglés, 'pt' para portugués.
     """
     # Configuraciones según el idioma
     if lang == 'es':
@@ -35,6 +36,13 @@ def create_sales_chart(df, lang='es'):
         y_label = "Ventas (en miles)"
         months = months_es
         legend_labels = ['Ventas 2024', 'Ventas 2025']
+    elif lang == 'pt':
+        title = "Vendas 2024 vs Vendas 2025"
+        subtitle = "Comparação de vendas mensais ano contra ano.\n2025 mostra crescimento, com pico notável em fevereiro."
+        x_label = "Mês"
+        y_label = "Vendas (em milhares)"
+        months = months_pt
+        legend_labels = ['Vendas 2024', 'Vendas 2025']
     else:
         title = "Sales 2024 vs Sales 2025"
         subtitle = "Year-over-year monthly sales comparison.\n2025 shows growth with a significant peak in February."
@@ -101,14 +109,17 @@ def create_sales_chart(df, lang='es'):
     )
     
     # Ajustar el layout para que la leyenda y títulos no se solapen
-    plt.tight_layout(rect=[0, 0.05, 1, 0.95]) # Deja espacio en la parte inferior (bottom=0.05)
+    plt.tight_layout(rect=(0, 0.05, 1, 0.95)) # Deja espacio en la parte inferior (bottom=0.05)
     
     plt.show()
 
 
-# --- 3. Generar y mostrar los dos gráficos ---
+# --- 3. Generar y mostrar los tres gráficos ---
 print("Generando gráfico en Español...")
 create_sales_chart(df_sales, lang='es')
 
 print("\nGenerando gráfico en Inglés...")
 create_sales_chart(df_sales, lang='en')
+
+print("\nGenerando gráfico en Portugués...")
+create_sales_chart(df_sales, lang='pt')
