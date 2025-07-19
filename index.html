@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLOY - WhatsApp Automation Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fa-duotone fa-solid fa-circle-user"></i>
+                <span data-translate="nav.logo">FLOY</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#features" data-translate="nav.features">Características</a></li>
+                <li><a href="#benefits" data-translate="nav.benefits">Beneficios</a></li>
+                <li><a href="#demo" data-translate="nav.demo">Demostración</a></li>
+                <li><a href="#contact" data-translate="nav.contact">Contacto</a></li>
+            </ul>
+            <div class="nav-controls">
+                <div class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div class="language-selector nav-language-selector">
+                    <select id="languageSelectorNav">
+                        <option value="es" data-translate="language.spanish">Español</option>
+                        <option value="en" data-translate="language.english">English</option>
+                        <option value="pt" data-translate="language.portuguese">Português</option>
+                    </select>
+                </div>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-grid"></div>
+            <div class="hero-orbs"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="highlight">FLOY</span><br>
+                    <span data-translate="hero.title">La Plataforma de Automatización de WhatsApp</span>
+                </h1>
+                <p class="hero-subtitle" data-translate="hero.subtitle">
+                    Revoluciona tu negocio con la automatización inteligente de WhatsApp. 
+                    Gestiona conversaciones, respuestas automáticas y análisis avanzados 
+                    con nuestra plataforma todo en uno.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-vote-yea"></i>
+                        <span data-translate="hero.vote">Votar por Floy</span>
+                    </a>
+                    <a href="#demo" class="btn btn-secondary">
+                        <i class="fas fa-play"></i>
+                        <span data-translate="hero.demo">Ver demostración</span>
+                    </a>
+                </div>
+            </div>
+            <div class="phone-mockup">
+                <div class="phone-frame">
+                    <div class="phone-screen">
+                        <div class="chat-header">
+                            <div class="chat-avatar">
+                                <i class="fa-duotone fa-solid fa-circle-user"></i>
+                            </div>
+                            <div class="chat-info">
+                                <h4 data-translate="demo.bot.name">FLOY Bot</h4>
+                                <span data-translate="demo.bot.status">En línea</span>
+                            </div>
+                        </div>
+                        <div class="chat-messages">
+                            <div class="chat-bubble">
+                                <span data-translate="demo.message1">¡Hola! Soy FLOY, tu asistente de WhatsApp. ¿En qué puedo ayudarte hoy?</span>
+                            </div>
+                            <div class="chat-bubble user">
+                                <span data-translate="demo.message2">¿Puedes mostrarme las estadísticas de ventas de los periodos 2024 y 2025 a día de hoy?</span>
+                            </div>
+                            <div class="chat-bubble">
+                                <span data-translate="demo.message3">¡Por supuesto! Aquí tienes la comparativa de ventas de los periodos 2024 y 2025:</span>
+                            </div>
+                            <div class="chat-bubble system">
+                                <div class="chart-container">
+                                    <img src="grafico_español.png" alt="Gráfico de ventas 2024-2025" class="sales-chart">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Wrapper with Noise Background -->
+    <div class="main-content-wrapper">
+        <!-- Video Section -->
+    <section class="video-section">
+        <div class="video-container">
+            <div class="video-placeholder">
+                <i class="fas fa-play-circle"></i>
+            </div>
+            <div class="video-text">
+                <h3 data-translate="video.title">Descubre FLOY en Acción</h3>
+                <p data-translate="video.description">
+                    Mira cómo FLOY transforma la gestión de WhatsApp en tu negocio. 
+                    Desde la configuración inicial hasta el análisis avanzado de datos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section class="sponsors">
+        <div class="sponsors-container">
+            <div class="sponsors-title">
+                <h3 data-translate="sponsors.title">Empresas que confían en FLOY</h3>
+            </div>
+            <div class="sponsors-logos">
+                <div class="sponsor-logo">
+                    <i class="fas fa-building"></i>
+                    <span>TechCorp</span>
+                </div>
+                <div class="sponsor-logo">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>EcommercePro</span>
+                </div>
+                <div class="sponsor-logo">
+                    <i class="fas fa-chart-line"></i>
+                    <span>DataFlow</span>
+                </div>
+                <div class="sponsor-logo">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>MobileFirst</span>
+                </div>
+                <div class="sponsor-logo">
+                    <i class="fas fa-cloud"></i>
+                    <span>CloudTech</span>
+                </div>
+                <div class="sponsor-logo">
+                    <i class="fas fa-rocket"></i>
+                    <span>StartupHub</span>
+                </div>
+                <!-- Duplicate for infinite scroll -->
+                <div class="sponsor-logo">
+                    <i class="fas fa-building"></i>
+                    <span>TechCorp</span>
+                </div>
+                <div class="sponsor-logo">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>EcommercePro</span>
+                </div>
+                <div class="sponsor-logo">
+                    <i class="fas fa-chart-line"></i>
+                    <span>DataFlow</span>
+                </div>
+                <div class="sponsor-logo">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>MobileFirst</span>
+                </div>
+                <div class="sponsor-logo">
+                    <i class="fas fa-cloud"></i>
+                    <span>CloudTech</span>
+                </div>
+                <div class="sponsor-logo">
+                    <i class="fas fa-rocket"></i>
+                    <span>StartupHub</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-translate="features.title">Características Principales</h2>
+                <p data-translate="features.subtitle">
+                    Descubre todas las herramientas que FLOY pone a tu disposición 
+                    para revolucionar tu comunicación por WhatsApp.
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fa-duotone fa-solid fa-circle-user"></i>
+                    </div>
+                    <h3 data-translate="features.automation.title">Automatización Inteligente</h3>
+                    <p data-translate="features.automation.description">
+                        Configura respuestas automáticas, flujos de conversación y 
+                        triggers personalizados para optimizar tu atención al cliente.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3 data-translate="features.analytics.title">Análisis Avanzado</h3>
+                    <p data-translate="features.analytics.description">
+                        Obtén insights detallados sobre el rendimiento de tus campañas, 
+                        tiempos de respuesta y satisfacción del cliente.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 data-translate="features.management.title">Gestión de Contactos</h3>
+                    <p data-translate="features.management.description">
+                        Organiza y segmenta tu base de datos de contactos para 
+                        campañas más efectivas y personalizadas.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 data-translate="features.security.title">Seguridad Total</h3>
+                    <p data-translate="features.security.description">
+                        Protege tus conversaciones con encriptación de extremo a extremo 
+                        y cumplimiento de normativas de privacidad.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3 data-translate="features.integration.title">Integraciones</h3>
+                    <p data-translate="features.integration.description">
+                        Conecta FLOY con tu CRM, herramientas de marketing y 
+                        sistemas de gestión empresarial.
+                    </p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 data-translate="features.support.title">Soporte 24/7</h3>
+                    <p data-translate="features.support.description">
+                        Nuestro equipo de expertos está disponible para ayudarte 
+                        en cualquier momento del día.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <div class="benefits-content">
+                <div class="benefits-text">
+                    <h2 data-translate="benefits.title">¿Por qué elegir FLOY?</h2>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3 data-translate="benefits.efficiency.title">Eficiencia Operativa</h3>
+                            <p data-translate="benefits.efficiency.description">
+                                Reduce el tiempo de respuesta en un 80% y automatiza 
+                                hasta el 70% de las consultas frecuentes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3 data-translate="benefits.roi.title">ROI Increíble</h3>
+                            <p data-translate="benefits.roi.description">
+                                Incrementa tus ventas en un 150% y reduce costos 
+                                operativos hasta en un 60%.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-smile"></i>
+                        </div>
+                        <div class="benefit-content">
+                            <h3 data-translate="benefits.satisfaction.title">Satisfacción del Cliente</h3>
+                            <p data-translate="benefits.satisfaction.description">
+                                Mejora la experiencia del cliente con respuestas 
+                                instantáneas y atención personalizada 24/7.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label" data-translate="stats.users">Usuarios Activos</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">50M+</span>
+                        <span class="stat-label" data-translate="stats.messages">Mensajes Procesados</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">99.9%</span>
+                        <span class="stat-label" data-translate="stats.uptime">Tiempo Activo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Demo Section -->
+    <section class="demo" id="demo">
+        <div class="container">
+            <div class="demo-container">
+                <div class="demo-chat">
+                    <div class="chat-interface">
+                        <div class="chat-header-demo">
+                                                    <div class="chat-avatar-demo">
+                            <i class="fa-duotone fa-solid fa-circle-user"></i>
+                        </div>
+                            <div class="chat-info-demo">
+                                <h4 data-translate="demo.title">FLOY Demo</h4>
+                                <span data-translate="demo.subtitle">Chat en tiempo real</span>
+                            </div>
+                        </div>
+                        <div class="chat-messages-demo" id="chatMessages">
+                            <div class="chat-bubble-demo">
+                                <span data-translate="demo.welcome">¡Hola! Soy FLOY, tu asistente de WhatsApp. ¿En qué puedo ayudarte hoy?</span>
+                            </div>
+                        </div>
+                        <div class="chat-input">
+                            <input type="text" id="chatInput" placeholder="Escribe tu mensaje..." data-translate="demo.input.placeholder">
+                            <button id="sendButton">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="demo-info">
+                    <h3 data-translate="demo.info.title">Prueba FLOY Ahora</h3>
+                    <p data-translate="demo.info.description">
+                        Experimenta la potencia de FLOY con nuestro demo interactivo. 
+                        Haz preguntas sobre automatización, análisis o cualquier funcionalidad.
+                    </p>
+                    <ul class="demo-suggestions">
+                        <li data-translate="demo.suggestion1">"Muéstrame las estadísticas de ventas"</li>
+                        <li data-translate="demo.suggestion2">"¿Cómo configuro respuestas automáticas?"</li>
+                        <li data-translate="demo.suggestion3">"Necesito un reporte de conversiones"</li>
+                        <li data-translate="demo.suggestion4">"¿Qué integraciones están disponibles?"</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 data-translate="contact.title">¿Listo para Revolucionar tu WhatsApp?</h2>
+                    <p data-translate="contact.description">
+                        Únete a miles de empresas que ya confían en FLOY para 
+                        automatizar y optimizar su comunicación por WhatsApp.
+                    </p>
+                    <div class="contact-features">
+                        <div class="contact-feature">
+                            <i class="fas fa-clock"></i>
+                            <span data-translate="contact.feature1">Configuración en 5 minutos</span>
+                        </div>
+                        <div class="contact-feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <span data-translate="contact.feature2">Prueba gratuita de 14 días</span>
+                        </div>
+                        <div class="contact-feature">
+                            <i class="fas fa-headset"></i>
+                            <span data-translate="contact.feature3">Soporte técnico incluido</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required data-translate="contact.form.name" placeholder="Nombre completo">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required data-translate="contact.form.email" placeholder="Correo electrónico">
+                        </div>
+
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4" data-translate="contact.form.message" placeholder="Cuéntanos sobre tu proyecto"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" data-translate="contact.form.submit">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Enviar Mensaje</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fa-duotone fa-solid fa-circle-user"></i>
+                        <span>FLOY</span>
+                    </div>
+                    <p data-translate="footer.description">
+                        La plataforma líder en automatización de WhatsApp para empresas 
+                        que buscan optimizar su comunicación y aumentar sus ventas.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer.product">Producto</h4>
+                    <ul>
+                        <li><a href="#features" data-translate="footer.features">Características</a></li>
+                        <li><a href="#demo" data-translate="footer.demo">Demo</a></li>
+                        <li><a href="#" data-translate="footer.api">API</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer.company">Empresa</h4>
+                    <ul>
+                        <li><a href="#" data-translate="footer.about">Acerca de</a></li>
+                        <li><a href="#" data-translate="footer.blog">Blog</a></li>
+                        <li><a href="#" data-translate="footer.careers">Carreras</a></li>
+                        <li><a href="#" data-translate="footer.press">Prensa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-translate="footer.support">Soporte</h4>
+                    <ul>
+                        <li><a href="#" data-translate="footer.help">Centro de Ayuda</a></li>
+                        <li><a href="#" data-translate="footer.docs">Documentación</a></li>
+                        <li><a href="#" data-translate="footer.contact">Contacto</a></li>
+                        <li><a href="#" data-translate="footer.status">Estado del Servicio</a></li>
+                    </ul>
+                    <div class="language-selector">
+                        <select id="languageSelector">
+                            <option value="es" data-translate="language.spanish">Español</option>
+                            <option value="en" data-translate="language.english">English</option>
+                            <option value="pt" data-translate="language.portuguese">Português</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FLOY. <span data-translate="footer.rights">Todos los derechos reservados.</span></p>
+                <div class="talento-tech">
+                    <span data-translate="footer.powered">Desarrollado con ❤️ por Talento Tech</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Modal para gráfico expandido -->
+    <div id="chartModal" class="chart-modal">
+        <div class="chart-modal-content">
+            <button class="chart-modal-close" id="chartModalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <img id="chartModalImage" src="" alt="Gráfico expandido">
+        </div>
+    </div>
+
+    <!-- Modal para gráfica Plotly expandida -->
+    <div id="plotlyModal" class="chart-modal">
+        <div class="chart-modal-content">
+            <button class="chart-modal-close" id="plotlyModalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div id="plotlyModalContainer"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
