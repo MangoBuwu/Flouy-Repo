@@ -55,12 +55,16 @@ body {
     color: var(--text-primary);
     background: var(--background-white);
     transition: all 0.3s ease;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 
@@ -770,6 +774,8 @@ body {
     padding: 0 2rem;
     position: relative;
     z-index: 1;
+    overflow: hidden;
+    width: 100%;
 }
 
 .sponsors-title {
@@ -788,25 +794,25 @@ body {
 .sponsors-logos {
     display: flex;
     align-items: center;
-    gap: 3rem;
-    white-space: nowrap;
+    gap: 2rem;
     justify-content: center;
     flex-wrap: nowrap;
-    overflow-x: auto;
     padding: 1rem 0;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .sponsor-logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1.5rem;
+    padding: 1rem;
     background: var(--background-white);
     border-radius: 12px;
     box-shadow: var(--shadow-light);
     transition: all 0.3s ease;
-    width: 200px;
-    height: 120px;
+    width: 160px;
+    height: 100px;
     border: 2px solid var(--border-color);
     backdrop-filter: blur(10px);
     flex-shrink: 0;
@@ -1673,6 +1679,8 @@ body {
         gap: 2rem;
         flex-wrap: wrap;
         min-height: 100px;
+        max-width: 100%;
+        overflow: hidden;
     }
     
     .sponsor-logo {
@@ -1690,8 +1698,8 @@ body {
     /* Mostrar solo el tercer logo (sin filtro) en mobile */
     .sponsor-logo:nth-child(3) {
         display: flex !important;
-        width: 200px;
-        height: 120px;
+        width: 160px;
+        height: 100px;
     }
     
     .sponsor-logo:nth-child(3) img {
@@ -1790,8 +1798,8 @@ body {
     
     /* Mostrar solo el tercer logo (sin filtro) en mobile */
     .sponsor-logo:nth-child(3) {
-        width: 200px;
-        height: 120px;
+        width: 160px;
+        height: 100px;
         display: flex !important;
     }
     
@@ -1832,8 +1840,8 @@ body {
 @media (max-width: 400px) {
     /* Mostrar solo el tercer logo (sin filtro) en mobile */
     .sponsor-logo:nth-child(3) {
-        width: 200px;
-        height: 120px;
+        width: 160px;
+        height: 100px;
         display: flex !important;
     }
     
@@ -1850,7 +1858,7 @@ body {
     }
     
     .sponsors-logos {
-        min-height: 120px;
+        min-height: 100px;
         gap: 1rem;
     }
     
@@ -1919,6 +1927,8 @@ body {
 /* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 /* Parallax Effect */
@@ -2121,8 +2131,8 @@ html {
   }
   
   .sponsor-logo {
-    width: 200px;
-    height: 120px;
+    width: 160px;
+    height: 100px;
   }
 }
 
