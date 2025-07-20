@@ -829,6 +829,24 @@ document.querySelectorAll('.nav-menu a').forEach(link => {
     });
 });
 
+// Close mobile menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (navMenu.classList.contains('active') && 
+        !navMenu.contains(e.target) && 
+        !navToggle.contains(e.target)) {
+        navMenu.classList.remove('active');
+        navToggle.classList.remove('active');
+    }
+});
+
+// Close mobile menu with Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+        navMenu.classList.remove('active');
+        navToggle.classList.remove('active');
+    }
+});
+
 // Chart Modal Functionality
 const chartModal = document.getElementById('chartModal');
 const chartModalClose = document.getElementById('chartModalClose');
